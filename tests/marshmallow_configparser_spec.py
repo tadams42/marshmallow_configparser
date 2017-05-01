@@ -18,4 +18,5 @@ class DescribeConfigSchema:
     def it_dumps_config_object_to_ini_file(self, config_files, config_schema):
         obj, errors = config_schema.load(config_files)
         data, errors = config_schema.dumps(obj)
+        assert not errors
         assert data == '[Section1]\noption1 = mandatory string\noption2 = optional string\noption3 = 42\noption4 = 24\n[Section2]\noption1 = mandatory string\noption2 = optional string\noption3 = 42\noption4 = 24'

@@ -5,7 +5,6 @@ from __future__ import print_function
 
 import io
 import re
-import sys
 from glob import glob
 from os.path import basename
 from os.path import dirname
