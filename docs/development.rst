@@ -1,8 +1,8 @@
-Developing marshmallow_configparser
-===================================
+Development
+===========
 
-Prepare development environment
--------------------------------
+Preparing development environment
+---------------------------------
 
 Create new virtual environment
 
@@ -32,7 +32,7 @@ And to distribute it on PyPI_
     pip install twine
 
 
-Install it in develop mode
+Installing in develop mode
 --------------------------
 
 .. code-block:: sh
@@ -76,6 +76,23 @@ and finally, tests can be run with tox_
 .. code-block:: sh
 
     tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
 
 
 Runing under PyPy3

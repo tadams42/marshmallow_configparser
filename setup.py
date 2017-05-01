@@ -15,52 +15,6 @@ from os.path import splitext
 from setuptools import find_packages
 from setuptools import setup
 
-NEEDS_PYTEST = {'pytest', 'test', 'ptr'}.intersection(sys.argv)
-PYTEST_RUNNER = ['pytest-runner'] if NEEDS_PYTEST else []
-
-
-SETUP_REQUIREMENTS = [
-    # ... (other setup requirements)
-] + PYTEST_RUNNER
-
-INSTALL_REQUIREMENTS = [
-    'marshmallow'
-]
-
-DEV_REQUIREMENTS = [
-    'pycodestyle >= 2.0.0',  # (formerly called pep8)
-    'mccabe >= 0.5.0',
-    'pylint >= 1.6.0',
-    'yapf >= 0.11.0',
-    'bumpversion >= 0.5.3',
-
-    # IPython stuff
-    'ipython >= 5.0.0',
-    'jupyter >= 1.0.0',
-    'ipdb >= 0.10.0',
-
-    # Docs and viewers
-    'Sphinx >= 1.4.0',
-    'sphinx_rtd_theme >= 0.1.9',
-    'restview >= 2.6.0',
-
-    # Profiling
-    'snakeviz >= 0.4.0',
-    'pyprof2calltree >= 1.4.0',
-
-    # py.test things usefull only when manually running tests
-    'pytest-colordots >= 0.1.0',
-    'colored-traceback >= 0.2.0',
-]
-
-TEST_REQUIREMENTS = [
-    'pytest >= 3.0.0',
-    'pytest-spec >= 1.0.0',
-    'pytest-cov >= 2.3.0',
-    'check-manifest >= 0.33.0',
-    'coverage >= 4.2.0',
-]
-
 
 def read(*names, **kwargs):
     return io.open(
@@ -104,20 +58,44 @@ setup(
     keywords=[
         "congiparser", "marshmallow"
     ],
-    setup_requires=SETUP_REQUIREMENTS,
+    # setup_requires=SETUP_REQUIREMENTS,
     # List run-time dependencies HERE.  These will be installed by pip when
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=INSTALL_REQUIREMENTS,
+    install_requires=[
+        'marshmallow'
+    ],
     # List additional groups of dependencies HERE (e.g. development
     # dependencies). You can install these using the following syntax,
     # for example:
     # $ pip install -e .[dev]
     extras_require={
-        'dev': list(
-            set(DEV_REQUIREMENTS).union(set(TEST_REQUIREMENTS))
-        )
-    },
-    tests_require=TEST_REQUIREMENTS,
+        'dev': [
+            'pycodestyle >= 2.0.0',  # (formerly called pep8)
+            'mccabe >= 0.5.0',
+            'pylint >= 1.6.0',
+            'yapf >= 0.11.0',
+            'bumpversion >= 0.5.3',
+
+            # IPython stuff
+            'ipython >= 5.0.0',
+            'jupyter >= 1.0.0',
+            'ipdb >= 0.10.0',
+
+            # Docs and viewers
+            'sphinx >= 1.4.0',
+            'sphinx_rtd_theme >= 0.1.9',
+
+            # py.test stuff
+            'pytest-colordots >= 0.1.0',
+            'colored-traceback >= 0.2.0',
+            'pytest >= 3.0.0',
+            'pytest-spec >= 1.0.0',
+            'pytest-cov >= 2.3.0',
+            'pytest-runner',  # Needed for `python setup.py test` to work
+            'check-manifest >= 0.33.0',
+            'coverage >= 4.2.0',
+        ]
+    }
 )

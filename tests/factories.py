@@ -4,7 +4,6 @@ import os
 import pytest
 from marshmallow.validate import Range
 
-from marshmallow_configparser import Boolean
 from marshmallow_configparser import ConfigParserSchema
 from marshmallow_configparser import Integer
 from marshmallow_configparser import IsNotBlank
