@@ -3,9 +3,7 @@ Overview
 
 .. start-badges
 
-|version| |license| |travis| |docs| |codacy_grade| |requirements|
-
-|wheel| |python_versions| |python_implementations|
+|version| |license| |travis| |docs| |requirements| |codacy_grade| |codacy_coverage| |wheel| |python_versions|
 
 .. |version| image:: https://img.shields.io/pypi/v/marshmallow_configparser.svg
     :alt: PyPI Package latest release
@@ -41,7 +39,11 @@ Overview
 
 .. |codacy_grade| image:: https://api.codacy.com/project/badge/Grade/ad3aa55e2fc74a37a1b1ac2fb59f6dc0
     :target: https://www.codacy.com/app/tomislav-adamic/marshmallow_configparser
-    :alt: Codacy Code Quality Status
+    :alt: Codacy code quality status
+
+.. |codacy_coverage| image:: https://api.codacy.com/project/badge/Coverage/ad3aa55e2fc74a37a1b1ac2fb59f6dc0
+    :target: https://www.codacy.com/app/tomislav-adamic/marshmallow_configparser
+    :alt: Codacy code coverage
 
 .. end-badges
 
