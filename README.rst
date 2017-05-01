@@ -7,7 +7,7 @@ Overview
 
 Ever wanted to load plain ``.ini`` config files and then validate loaded config?
 
-Ever wanted to load config from multiple locations (``/etc/appconfig.con``, ``~/.appconfig.conf``) into single objcet and then validate that?
+Ever wanted to load config from multiple locations (``/etc/appconfig.con``, ``~/.appconfig.conf``) into single object and then validate that?
 
 Worry no more!
 
