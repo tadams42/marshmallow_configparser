@@ -3,6 +3,46 @@ Overview
 
 .. start-badges
 
+|version| |license| |travis| |docs| |codacy_grade| |requirements|
+
+|wheel| |python_versions| |python_implementations|
+
+.. |version| image:: https://img.shields.io/pypi/v/marshmallow_configparser.svg
+    :alt: PyPI Package latest release
+    :target: https://pypi.python.org/pypi/marshmallow_configparser
+
+.. |license| image:: https://img.shields.io/pypi/l/marshmallow_configparser.svg
+    :target: https://opensource.org/licenses/MIT
+    :alt: License
+
+.. |wheel| image:: https://img.shields.io/pypi/wheel/marshmallow_configparser.svg
+    :alt: PyPI Wheel
+    :target: https://pypi.python.org/pypi/marshmallow_configparser
+
+.. |python_versions| image:: https://img.shields.io/pypi/pyversions/marshmallow_configparser.svg
+    :alt: Supported versions
+    :target: https://pypi.python.org/pypi/marshmallow_configparser
+
+.. |python_implementations| image:: https://img.shields.io/pypi/implementation/marshmallow_configparser.svg
+    :alt: Supported implementations
+    :target: https://pypi.python.org/pypi/marshmallow_configparser
+
+.. |travis| image:: https://travis-ci.org/tadamic/marshmallow_configparser.svg
+    :alt: Travis-CI Build Status
+    :target: https://travis-ci.org/tadamic/marshmallow_configparser
+
+.. |docs| image:: https://readthedocs.org/projects/marshmallow_configparser/badge/?style=flat
+    :target: http://marshmallow_configparser.readthedocs.io/en/latest/
+    :alt: Documentation Status
+
+.. |requirements| image:: https://requires.io/github/tadamic/marshmallow_configparser/requirements.svg
+     :target: https://requires.io/github/tadamic/marshmallow_configparser/requirements/
+     :alt: Requirements Status
+
+.. |codacy_grade| image:: https://api.codacy.com/project/badge/Grade/ad3aa55e2fc74a37a1b1ac2fb59f6dc0
+    :target: https://www.codacy.com/app/tomislav-adamic/marshmallow_configparser
+    :alt: Codacy Code Quality Status
+
 .. end-badges
 
 Ever wanted to load plain ``.ini`` config files and then validate loaded config?
@@ -126,7 +166,7 @@ Which can then load and validate our config:
 Documentation
 =============
 
-TODO
+http://marshmallow_configparser.readthedocs.io/en/latest/index.html
 
 
 .. _marshmallow: https://github.com/marshmallow-code/marshmallow

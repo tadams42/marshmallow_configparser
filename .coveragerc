@@ -1,10 +1,10 @@
 [paths]
-source = marshmallow_configparser
+source = src
 
 [run]
 branch = true
 source =
-    marshmallow_configparser
+    src
     tests
 parallel = true
 

@@ -3,47 +3,42 @@ sudo: false
 cache: pip
 env:
   global:
-    - LD_PRELOAD=/lib/x86_64-linux-gnu/libSegFault.so
-    - SEGFAULT_SIGNALS=all
+  - LD_PRELOAD=/lib/x86_64-linux-gnu/libSegFault.so
+  - SEGFAULT_SIGNALS=all
+  - secure: V59XotjCl0kbDZaFbjPEyGyFUQIj+dFAhvLdzU3F9Hm/pB2qDRxqkrfyP/pjLNd6joTU//7cm20CWMZ0mjzJuxPq5NnM/WQSSDFlOrqYFS1NHC30A1VqBwiRX3SqEqKsT7QH0nqew0OO5dTkfABHyPu8JAEcq2nqbimoye7bJTO/5UyntLjjzirzeDp2SL5P359qD5D1zJ6rs7kos7PWNfufEK/J8IqZ5brF4P/0HovKRNDyxwfCkQ5QEgDwmiQ6WWI7N0tQrciEsav41PUCshNlTGZKTnLrVpB+eT80gkOD10yIfjqJs7fJFhE/P10MqU45/jcsHuu5U6xN/h53rx0u7I3ft8n16F6+sqL2r9ixKvuGfONpLBmEUKZXk1Rtv8Uj4T6uBnqdZTywvWNOgWYMGicpCT18bwNE8etihfkTG5q4HDRx9pYu9PMzHyA33gPQ9h3cERzw41lXI9cpDw7t+Ne1MUaJDWsMMpPFDv+B5LgNikSvmCak5joNScVCHL5fVwTIEU82Or6ouebnP3l7Xoh2Y37pqtYCdyqSv8DV4+ir8ebfSIpswM3ghZAQVkRXhWShnM108XQw68cAfhScpWTR3kuaA/Xapiga0/umFfgctiwCssxJwy+iW6sqqdRijGwv5vHFpVC4qMoPY8INclUeNa7vwAHGzV9F7AQ=
   matrix:
-    - TOXENV=check
-    - TOXENV=docs
+  - TOXENV=check
+  - TOXENV=docs
 matrix:
   include:
-    - python: '2.7'
-      env:
-        - TOXENV=2.7-cover,report
-    - python: '2.7'
-      env:
-        - TOXENV=2.7-nocov
-    - python: '3.4'
-      env:
-        - TOXENV=3.4-cover,report
-    - python: '3.4'
-      env:
-        - TOXENV=3.4-nocov
-    - python: '3.5'
-      env:
-        - TOXENV=3.5-cover,report
-    - python: '3.5'
-      env:
-        - TOXENV=3.5-nocov
-    - python: 'pypy-5.4'
-      env:
-        - TOXENV=pypy-cover,report
-    - python: 'pypy-5.4'
-      env:
-        - TOXENV=pypy-nocov
-    # - python: 'pypy3.3-5.2-alpha1'
-    #   env:
-    #     - TOXENV=pypy3-cover,report
-    # - python: 'pypy3.3-5.2-alpha1'
-    #   env:
-    #     - TOXENV=pypy3-nocov
+  - python: '2.7'
+    env:
+    - TOXENV=2.7-cover,report
+  - python: '2.7'
+    env:
+    - TOXENV=2.7-nocov
+  - python: '3.4'
+    env:
+    - TOXENV=3.4-cover,report
+  - python: '3.4'
+    env:
+    - TOXENV=3.4-nocov
+  - python: '3.5'
+    env:
+    - TOXENV=3.5-cover,report
+  - python: '3.5'
+    env:
+    - TOXENV=3.5-nocov
+  - python: pypy-5.4
+    env:
+    - TOXENV=pypy-cover,report
+  - python: pypy-5.4
+    env:
+    - TOXENV=pypy-nocov
 install:
-  - pip install tox-travis
+- pip install tox-travis
 script:
-  - tox -v
+- tox -v
 after_failure:
-  - more .tox/log/* | cat
-  - more .tox/*/log/* | cat
+- more .tox/log/* | cat
+- more .tox/*/log/* | cat
