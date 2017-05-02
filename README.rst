@@ -104,58 +104,44 @@ We can define `marshmallow`_ schema:
 
     from marshmallow.validate import Range
 
-    from marshmallow_configparser import ConfigParserSchema, Integer, String
-    from marshmallow_configparser import IsNotBlank
+    from marshmallow_configparser import (ConfigBoolean, ConfigInteger,
+                                          ConfigParserSchema, ConfigString,
+                                          IsNotBlank)
 
     class ConfigSchema(ConfigParserSchema):
         class Meta:
             model = ConfigObject
 
-        MANDATORY_STRING1 = String(
-            section='Section1',
-            load_from='option1', dump_to='option1',
-            allow_null=False, required=True, default='', missing='',
+        MANDATORY_STRING1 = ConfigString(
+            section='Section1', load_from='option1', dump_to='option1',
             validate=[IsNotBlank()]
         )
-        OPTIONAL_STRING1 = String(
-            section='Section1',
-            load_from='option2', dump_to='option2',
-            allow_null=False, required=False, default='', missing=''
+        OPTIONAL_STRING1 = ConfigString(
+            section='Section1', load_from='option2', dump_to='option2',
         )
-        MANDATORY_INTEGER1 = Integer(
-            section='Section1',
-            load_from='option3', dump_to='option3',
-            allow_null=False, required=True, default=0, missing=0,
+        MANDATORY_INTEGER1 = ConfigInteger(
+            section='Section1', load_from='option3', dump_to='option3',
             validate=[Range(min=24, max=42)]
         )
-        OPTIONAL_INTEGER1 = Integer(
-            section='Section1',
-            load_from='option4', dump_to='option4',
-            allow_null=False, required=False, default=0, missing=0
+        OPTIONAL_INTEGER1 = ConfigInteger(
+            section='Section1', load_from='option4', dump_to='option4',
         )
 
-        MANDATORY_STRING2 = String(
-            section='Section2',
-            load_from='option1', dump_to='option1',
-            allow_null=False, required=True, default='', missing='',
+        MANDATORY_STRING2 = ConfigString(
+            section='Section2', load_from='option1', dump_to='option1',
             validate=[IsNotBlank()]
         )
-        OPTIONAL_STRING2 = String(
-            section='Section2',
-            load_from='option2', dump_to='option2',
-            allow_null=False, required=False, default='', missing=''
+        OPTIONAL_STRING2 = ConfigString(
+            section='Section2', load_from='option2', dump_to='option2',
         )
-        MANDATORY_INTEGER2 = Integer(
-            section='Section2',
-            load_from='option3', dump_to='option3',
-            allow_null=False, required=True, default=0, missing=0,
+        MANDATORY_INTEGER2 = ConfigInteger(
+            section='Section2', load_from='option3', dump_to='option3',
             validate=[Range(min=24, max=42)]
         )
-        OPTIONAL_INTEGER2 = Integer(
-            section='Section2',
-            load_from='option4', dump_to='option4',
-            allow_null=False, required=False, default=0, missing=0
+        OPTIONAL_INTEGER2 = ConfigInteger(
+            section='Section2', load_from='option4', dump_to='option4',
         )
+
 
 Which can then load and validate our config:
 
@@ -164,6 +150,23 @@ Which can then load and validate our config:
     schema = ConfigSchema()
     obj, errors = schema.load(['/tmp/example_config.conf'])
 
+Ann the end we have:
+
+.. code-block:: python
+
+    obj.__dict_
+
+    {'MANDATORY_INTEGER1': 42,
+     'MANDATORY_INTEGER2': 42,
+     'MANDATORY_STRING1': 'mandatory string',
+     'MANDATORY_STRING2': 'mandatory string',
+     'OPTIONAL_INTEGER1': 24,
+     'OPTIONAL_INTEGER2': 24,
+     'OPTIONAL_STRING1': 'optional string',
+     'OPTIONAL_STRING2': 'optional string'}
+
+Instead of using convenience classes like ``ConfigString``, there are also
+classes in ``marshmallow_configparser.fields`` module that expose full `marshmallow`_ API. Check the docs for details.
 
 Documentation
 =============

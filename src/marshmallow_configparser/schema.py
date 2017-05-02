@@ -8,9 +8,7 @@ try:
 except ImportError:
     from io import StringIO
 
-from marshmallow import Schema
-from marshmallow import SchemaOpts
-from marshmallow import post_load
+from marshmallow import Schema, SchemaOpts, post_load
 
 
 class ModelOpts(SchemaOpts):

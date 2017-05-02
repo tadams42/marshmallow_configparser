@@ -20,3 +20,8 @@ marshmallow_configparser
     :members:
     :undoc-members:
     :show-inheritance:
+
+.. automodule:: marshmallow_configparser.convenience_fields
+    :members:
+    :undoc-members:
+    :show-inheritance:
