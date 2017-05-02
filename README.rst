@@ -150,7 +150,7 @@ Which can then load and validate our config:
     schema = ConfigSchema()
     obj, errors = schema.load(['/tmp/example_config.conf'])
 
-Ann the end we have:
+In the end we have:
 
 .. code-block:: python
 

@@ -19,7 +19,7 @@ def read(*names, **kwargs):
 
 setup(
     name="marshmallow_configparser",
-    version='0.1.0',
+    version='0.2.0',
     license='MIT',
     description="ConfigParser meets marshmallow",
     long_description='%s\n%s' % (
