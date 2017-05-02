@@ -42,6 +42,7 @@ class String(ConfigParserFieldMixin, fields.String):
         self._section = section
         super(String, self).__init__(*args, **kwargs)
 
+
 class UUID(ConfigParserFieldMixin, fields.UUID):
     def __init__(self, section, *args, **kwargs):
         self._section = section

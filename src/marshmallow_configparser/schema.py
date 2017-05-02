@@ -87,6 +87,8 @@ class ConfigParserSchema(Schema):
 
         for section in config_parser.sections():
             for option in config_parser.options(section):
-                data[section + '.' + option] = config_parser.get(section, option)
+                data[section + '.' + option] = (
+                    config_parser.get(section, option)
+                )
 
         return super(ConfigParserSchema, self).load(data)

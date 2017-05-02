@@ -25,9 +25,9 @@ Overview
     :alt: Supported implementations
     :target: https://pypi.python.org/pypi/marshmallow-configparser
 
-.. |travis| image:: https://travis-ci.org/tadamic/marshmallow-configparser.svg
+.. |travis| image:: https://api.travis-ci.org/tadamic/marshmallow_configparser.svg
     :alt: Travis-CI Build Status
-    :target: https://travis-ci.org/tadamic/marshmallow-configparser
+    :target: https://travis-ci.org/tadamic/marshmallow_configparser
 
 .. |docs| image:: https://readthedocs.org/projects/marshmallow-configparser/badge/?style=flat
     :target: http://marshmallow-configparser.readthedocs.io/en/latest/
