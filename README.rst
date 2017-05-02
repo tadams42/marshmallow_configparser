@@ -5,45 +5,45 @@ Overview
 
 |version| |license| |travis| |docs| |requirements| |codacy_grade| |codacy_coverage| |wheel| |python_versions|
 
-.. |version| image:: https://img.shields.io/pypi/v/marshmallow_configparser.svg
+.. |version| image:: https://img.shields.io/pypi/v/marshmallow-configparser.svg
     :alt: PyPI Package latest release
-    :target: https://pypi.python.org/pypi/marshmallow_configparser
+    :target: https://pypi.python.org/pypi/marshmallow-configparser
 
-.. |license| image:: https://img.shields.io/pypi/l/marshmallow_configparser.svg
+.. |license| image:: https://img.shields.io/pypi/l/marshmallow-configparser.svg
     :target: https://opensource.org/licenses/MIT
     :alt: License
 
-.. |wheel| image:: https://img.shields.io/pypi/wheel/marshmallow_configparser.svg
+.. |wheel| image:: https://img.shields.io/pypi/wheel/marshmallow-configparser.svg
     :alt: PyPI Wheel
-    :target: https://pypi.python.org/pypi/marshmallow_configparser
+    :target: https://pypi.python.org/pypi/marshmallow-configparser
 
-.. |python_versions| image:: https://img.shields.io/pypi/pyversions/marshmallow_configparser.svg
+.. |python_versions| image:: https://img.shields.io/pypi/pyversions/marshmallow-configparser.svg
     :alt: Supported versions
-    :target: https://pypi.python.org/pypi/marshmallow_configparser
+    :target: https://pypi.python.org/pypi/marshmallow-configparser
 
-.. |python_implementations| image:: https://img.shields.io/pypi/implementation/marshmallow_configparser.svg
+.. |python_implementations| image:: https://img.shields.io/pypi/implementation/marshmallow-configparser.svg
     :alt: Supported implementations
-    :target: https://pypi.python.org/pypi/marshmallow_configparser
+    :target: https://pypi.python.org/pypi/marshmallow-configparser
 
-.. |travis| image:: https://travis-ci.org/tadamic/marshmallow_configparser.svg
+.. |travis| image:: https://travis-ci.org/tadamic/marshmallow-configparser.svg
     :alt: Travis-CI Build Status
-    :target: https://travis-ci.org/tadamic/marshmallow_configparser
+    :target: https://travis-ci.org/tadamic/marshmallow-configparser
 
-.. |docs| image:: https://readthedocs.org/projects/marshmallow_configparser/badge/?style=flat
-    :target: http://marshmallow_configparser.readthedocs.io/en/latest/
+.. |docs| image:: https://readthedocs.org/projects/marshmallow-configparser/badge/?style=flat
+    :target: http://marshmallow-configparser.readthedocs.io/en/latest/
     :alt: Documentation Status
 
-.. |requirements| image:: https://requires.io/github/tadamic/marshmallow_configparser/requirements.svg
-     :target: https://requires.io/github/tadamic/marshmallow_configparser/requirements/
+.. |requirements| image:: https://requires.io/github/tadamic/marshmallow_configparser/requirements.svg?branch=master
+     :target: https://requires.io/github/tadamic/marshmallow_configparser/requirements/?branch=master
      :alt: Requirements Status
 
 .. |codacy_grade| image:: https://api.codacy.com/project/badge/Grade/ad3aa55e2fc74a37a1b1ac2fb59f6dc0
-    :target: https://www.codacy.com/app/tomislav-adamic/marshmallow_configparser
-    :alt: Codacy code quality status
+    :target: https://www.codacy.com/app/tomislav-adamic/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadamic/marshmallow_configparser&amp;utm_campaign=Badge_Grade
+    :alt: Codacy grade
 
 .. |codacy_coverage| image:: https://api.codacy.com/project/badge/Coverage/ad3aa55e2fc74a37a1b1ac2fb59f6dc0
-    :target: https://www.codacy.com/app/tomislav-adamic/marshmallow_configparser
-    :alt: Codacy code coverage
+    :target: https://www.codacy.com/app/tomislav-adamic/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadamic/marshmallow_configparser&amp;utm_campaign=Badge_Coverage
+    :alt: Codacy coverage
 
 .. end-badges
 
@@ -171,7 +171,7 @@ classes in ``marshmallow_configparser.fields`` module that expose full `marshmal
 Documentation
 =============
 
-http://marshmallow_configparser.readthedocs.io/en/latest/index.html
+http://marshmallow-configparser.readthedocs.io/en/latest/index.html
 
 
 .. _marshmallow: https://github.com/marshmallow-code/marshmallow
