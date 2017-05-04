@@ -1,4 +1,6 @@
 import factories
+import pytest
+from marshmallow.validate import ValidationError
 
 
 class DescribeConfigSchema:
@@ -20,3 +22,18 @@ class DescribeConfigSchema:
         data, errors = config_schema.dumps(obj)
         assert not errors
         assert data == '[Section1]\noption1 = mandatory string\noption2 = optional string\noption3 = 42\noption4 = 24\n[Section2]\noption1 = mandatory string\noption2 = optional string\noption3 = 42\noption4 = 24'
+
+    def it_validates_config_files_readability(
+        self, non_readable_config_files, config_schema
+    ):
+        obj, errors = config_schema.load(non_readable_config_files)
+
+        assert not obj
+        assert 'config_files' in errors
+        assert 'No config files loaded!' in errors['config_files']
+
+        config_schema.strict = True
+        with pytest.raises(ValidationError) as e:
+            obj, errors = config_schema.load(non_readable_config_files)
+            assert 'config_files' in e.errors
+            assert 'No config files loaded!' in e.errors['config_files']

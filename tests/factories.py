@@ -72,6 +72,14 @@ def config_files():
         )
     ]
 
+@pytest.fixture
+def non_readable_config_files():
+    return [
+        os.path.abspath(
+            os.path.join(TESTS_ROOT_PATH, 'fixtures', 'foobar.conf')
+        )
+    ]
+
 
 @pytest.fixture
 def config_schema():

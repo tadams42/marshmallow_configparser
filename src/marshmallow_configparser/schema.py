@@ -9,6 +9,7 @@ except ImportError:
     from io import StringIO
 
 from marshmallow import Schema, SchemaOpts, post_load
+from marshmallow.validate import ValidationError
 
 
 class ModelOpts(SchemaOpts):
@@ -67,8 +68,17 @@ class ConfigParserSchema(Schema):
     def load(self, config_files):
         """Load configuration from list of config file paths."""
         config_parser = ConfigParser()
-        config_parser.read(config_files)
-        return self._load_from_config_parser(config_parser)
+
+        if not config_parser.read(config_files):
+            msg = (
+                "No config files loaded! Paths tried: {0}".format(config_files)
+            )
+            if self.strict:
+                raise ValidationError({'config_files': msg})
+            else:
+                return dict(), {'config_files': msg}
+        else:
+            return self._load_from_config_parser(config_parser)
 
     def loads(self, ini_file_data):
         """Load configuration from string representing INI file."""
