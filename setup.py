@@ -19,7 +19,7 @@ def read(*names, **kwargs):
 
 setup(
     name="marshmallow_configparser",
-    version='0.2.0',
+    version='0.3.0',
     license='MIT',
     description="ConfigParser meets marshmallow",
     long_description='%s\n%s' % (
@@ -52,7 +52,6 @@ setup(
     keywords=[
         "congiparser", "marshmallow"
     ],
-    # setup_requires=SETUP_REQUIREMENTS,
     # List run-time dependencies HERE.  These will be installed by pip when
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
@@ -71,6 +70,7 @@ setup(
             'pylint >= 1.6.0',
             'yapf >= 0.11.0',
             'bumpversion >= 0.5.3',
+            'isort',
 
             # IPython stuff
             'ipython >= 5.0.0',

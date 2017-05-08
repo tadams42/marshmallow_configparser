@@ -10,6 +10,4 @@ except ImportError:
     pass
 
 
-sys.path.append(
-    os.path.join(os.path.dirname(__name__), '..', 'src')
-)
+sys.path.append(os.path.join(os.path.dirname(__name__), '..', 'src'))

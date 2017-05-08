@@ -10,8 +10,8 @@ Overview
     :target: https://pypi.python.org/pypi/marshmallow-configparser
 
 .. |license| image:: https://img.shields.io/pypi/l/marshmallow-configparser.svg
-    :target: https://opensource.org/licenses/MIT
     :alt: License
+    :target: https://opensource.org/licenses/MIT
 
 .. |wheel| image:: https://img.shields.io/pypi/wheel/marshmallow-configparser.svg
     :alt: PyPI Wheel
@@ -30,20 +30,20 @@ Overview
     :target: https://travis-ci.org/tadamic/marshmallow_configparser
 
 .. |docs| image:: https://readthedocs.org/projects/marshmallow-configparser/badge/?style=flat
-    :target: http://marshmallow-configparser.readthedocs.io/en/latest/
     :alt: Documentation Status
+    :target: http://marshmallow-configparser.readthedocs.io/en/latest/
 
 .. |requirements| image:: https://requires.io/github/tadamic/marshmallow_configparser/requirements.svg?branch=master
-     :target: https://requires.io/github/tadamic/marshmallow_configparser/requirements/?branch=master
      :alt: Requirements Status
+     :target: https://requires.io/github/tadamic/marshmallow_configparser/requirements/?branch=master
 
 .. |codacy_grade| image:: https://api.codacy.com/project/badge/Grade/ad3aa55e2fc74a37a1b1ac2fb59f6dc0
-    :target: https://www.codacy.com/app/tomislav-adamic/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadamic/marshmallow_configparser&amp;utm_campaign=Badge_Grade
     :alt: Codacy grade
+    :target: https://www.codacy.com/app/tomislav-adamic/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadamic/marshmallow_configparser&amp;utm_campaign=Badge_Grade
 
 .. |codacy_coverage| image:: https://api.codacy.com/project/badge/Coverage/ad3aa55e2fc74a37a1b1ac2fb59f6dc0
-    :target: https://www.codacy.com/app/tomislav-adamic/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadamic/marshmallow_configparser&amp;utm_campaign=Badge_Coverage
     :alt: Codacy coverage
+    :target: https://www.codacy.com/app/tomislav-adamic/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadamic/marshmallow_configparser&amp;utm_campaign=Badge_Coverage
 
 .. end-badges
 

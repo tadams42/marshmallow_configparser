@@ -11,26 +11,7 @@ Create new virtual environment
     cd path/to/cloned/repo/marshmallow_configparser
     pyvenv .venv
     source .venv/bin/activate
-
-Then ensure we have newest pip and setuptools
-
-.. code-block:: sh
-
-    pip install -U pip
-    wget https://bootstrap.pypa.io/ez_setup.py -O - | python
-
-To be able to package project into wheels, we need
-
-.. code-block:: sh
-
-    pip install wheel
-
-And to distribute it on PyPI_
-
-.. code-block:: sh
-
-    pip install twine
-
+    pip install -u pip wheel
 
 Installing in develop mode
 --------------------------
@@ -50,7 +31,6 @@ To install extra packages usefull in development
 .. code-block:: sh
 
     pip install -e .[dev]
-
 
 Running tests
 -------------
@@ -94,7 +74,6 @@ Note, to combine the coverage data from all the tox environments run:
 
             PYTEST_ADDOPTS=--cov-append tox
 
-
 Runing under PyPy3
 ------------------
 
@@ -127,7 +106,6 @@ or as call graph through KCacheGrind
 
     pyprof2calltree -i program.prof
     kcachegrind program.prof.log
-
 
 Uploading to PyPI
 -----------------
