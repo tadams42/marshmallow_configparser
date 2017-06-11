@@ -25,31 +25,31 @@ Overview
     :alt: Supported implementations
     :target: https://pypi.python.org/pypi/marshmallow-configparser
 
-.. |travis| image:: https://api.travis-ci.org/tadamic/marshmallow_configparser.svg
+.. |travis| image:: https://api.travis-ci.org/tadams42/marshmallow_configparser.svg
     :alt: Travis-CI Build Status
-    :target: https://travis-ci.org/tadamic/marshmallow_configparser
+    :target: https://travis-ci.org/tadams42/marshmallow_configparser
 
 .. |docs| image:: https://readthedocs.org/projects/marshmallow-configparser/badge/?style=flat
     :alt: Documentation Status
     :target: http://marshmallow-configparser.readthedocs.io/en/latest/
 
-.. |requirements| image:: https://requires.io/github/tadamic/marshmallow_configparser/requirements.svg?branch=master
+.. |requirements| image:: https://requires.io/github/tadams42/marshmallow_configparser/requirements.svg?branch=master
      :alt: Requirements Status
-     :target: https://requires.io/github/tadamic/marshmallow_configparser/requirements/?branch=master
+     :target: https://requires.io/github/tadams42/marshmallow_configparser/requirements/?branch=master
 
 .. |codacy_grade| image:: https://api.codacy.com/project/badge/Grade/ad3aa55e2fc74a37a1b1ac2fb59f6dc0
     :alt: Codacy grade
-    :target: https://www.codacy.com/app/tomislav-adamic/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadamic/marshmallow_configparser&amp;utm_campaign=Badge_Grade
+    :target: https://www.codacy.com/app/tomislav-adamic/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadams42/marshmallow_configparser&amp;utm_campaign=Badge_Grade
 
 .. |codacy_coverage| image:: https://api.codacy.com/project/badge/Coverage/ad3aa55e2fc74a37a1b1ac2fb59f6dc0
     :alt: Codacy coverage
-    :target: https://www.codacy.com/app/tomislav-adamic/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadamic/marshmallow_configparser&amp;utm_campaign=Badge_Coverage
+    :target: https://www.codacy.com/app/tomislav-adamic/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadams42/marshmallow_configparser&amp;utm_campaign=Badge_Coverage
 
 .. end-badges
 
 Ever wanted to load plain ``.ini`` config files and then validate loaded config?
 
-Ever wanted to load config from multiple locations (``/etc/appconfig.con``, ``~/.appconfig.conf``) into single object and then validate that?
+Ever wanted to load config from multiple locations (``/etc/appconfig.conf``, ``~/.appconfig.conf``) into single object and then validate that?
 
 Worry no more!
 

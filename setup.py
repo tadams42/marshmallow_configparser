@@ -28,7 +28,7 @@ setup(
     ),
     author="Tomislav Adamic",
     author_email="tomislav.adamic@gmail.com",
-    url="https://github.com/tadamic/marshmallow_configparser",
+    url="https://github.com/tadams42/marshmallow_configparser",
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],

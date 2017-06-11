@@ -1,14 +1,12 @@
-
 Changelog
 =========
 
 unreleased
-----------
 
 0.3.0 (2017-05-08)
 ------------------
 
-* config validation now fails if there is no config files to read from or they arre not readable.
+* config validation now fails if there is no config files to read from or they are not readable.
 
 0.2.0 (2017-05-02)
 ------------------
