@@ -39,11 +39,11 @@ Overview
 
 .. |codacy_grade| image:: https://api.codacy.com/project/badge/Grade/ad3aa55e2fc74a37a1b1ac2fb59f6dc0
     :alt: Codacy grade
-    :target: https://www.codacy.com/app/tomislav-adamic/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadams42/marshmallow_configparser&amp;utm_campaign=Badge_Grade
+    :target: https://www.codacy.com/app/tadams42/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadams42/marshmallow_configparser&amp;utm_campaign=Badge_Grade
 
 .. |codacy_coverage| image:: https://api.codacy.com/project/badge/Coverage/ad3aa55e2fc74a37a1b1ac2fb59f6dc0
     :alt: Codacy coverage
-    :target: https://www.codacy.com/app/tomislav-adamic/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadams42/marshmallow_configparser&amp;utm_campaign=Badge_Coverage
+    :target: https://www.codacy.com/app/tadams42/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadams42/marshmallow_configparser&amp;utm_campaign=Badge_Coverage
 
 .. end-badges
 
