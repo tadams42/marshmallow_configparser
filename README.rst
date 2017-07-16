@@ -3,7 +3,7 @@ Overview
 
 .. start-badges
 
-|version| |license| |travis| |docs| |requirements| |codacy_grade| |codacy_coverage| |wheel| |python_versions|
+|version| |license| |travis| |docs| |requirements| |codacy_grade| |codacy_coverage| |wheel| |python_versions| |pyup_python3| |pyup_status|
 
 .. |version| image:: https://img.shields.io/pypi/v/marshmallow-configparser.svg
     :alt: PyPI Package latest release
@@ -44,6 +44,14 @@ Overview
 .. |codacy_coverage| image:: https://api.codacy.com/project/badge/Coverage/ad3aa55e2fc74a37a1b1ac2fb59f6dc0
     :alt: Codacy coverage
     :target: https://www.codacy.com/app/tadams42/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadams42/marshmallow_configparser&amp;utm_campaign=Badge_Coverage
+
+.. |pyup_python3| image:: https://pyup.io/repos/github/tadams42/marshmallow_configparser/python-3-shield.svg
+    :alt: Python 3
+    :target: https://pyup.io/repos/github/tadams42/marshmallow_configparser/
+
+.. |pyup_status| image:: https://pyup.io/repos/github/tadams42/marshmallow_configparser/shield.svg
+    :alt: Updates
+    :target: https://pyup.io/repos/github/tadams42/marshmallow_configparser/
 
 .. end-badges
 
