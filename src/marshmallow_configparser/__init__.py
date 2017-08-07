@@ -5,4 +5,4 @@ from .fields import (UUID, Boolean, Date, DateTime, Decimal, Dict, Email, Float,
 from .schema import ConfigParserSchema
 from .validators import IsNotBlank, IsNotNone
 
-__version__ = '0.3.0'
+__version__ = '0.3.1'
