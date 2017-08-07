@@ -3,11 +3,11 @@ Overview
 
 .. start-badges
 
-|version| |license| |travis| |docs| |requirements| |codacy_grade| |codacy_coverage| |wheel| |python_versions| |pyup_python3| |pyup_status|
+|version| |license| |travis| |docs| |requirements| |codacy_grade| |codacy_coverage| |wheel| |python_versions|
 
 .. |version| image:: https://img.shields.io/pypi/v/marshmallow-configparser.svg
     :alt: PyPI Package latest release
-    :target: https://pypi.python.org/pypi/marshmallow-configparser
+    :target: https://pypi.org/project/sokoenginepy/
 
 .. |license| image:: https://img.shields.io/pypi/l/marshmallow-configparser.svg
     :alt: License
@@ -15,15 +15,15 @@ Overview
 
 .. |wheel| image:: https://img.shields.io/pypi/wheel/marshmallow-configparser.svg
     :alt: PyPI Wheel
-    :target: https://pypi.python.org/pypi/marshmallow-configparser
+    :target: https://pypi.org/project/sokoenginepy/
 
 .. |python_versions| image:: https://img.shields.io/pypi/pyversions/marshmallow-configparser.svg
     :alt: Supported versions
-    :target: https://pypi.python.org/pypi/marshmallow-configparser
+    :target: https://pypi.org/project/sokoenginepy/
 
 .. |python_implementations| image:: https://img.shields.io/pypi/implementation/marshmallow-configparser.svg
     :alt: Supported implementations
-    :target: https://pypi.python.org/pypi/marshmallow-configparser
+    :target: https://pypi.org/project/marshmallow-configparser/
 
 .. |travis| image:: https://api.travis-ci.org/tadams42/marshmallow_configparser.svg
     :alt: Travis-CI Build Status
@@ -44,14 +44,6 @@ Overview
 .. |codacy_coverage| image:: https://api.codacy.com/project/badge/Coverage/ad3aa55e2fc74a37a1b1ac2fb59f6dc0
     :alt: Codacy coverage
     :target: https://www.codacy.com/app/tadams42/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadams42/marshmallow_configparser&amp;utm_campaign=Badge_Coverage
-
-.. |pyup_python3| image:: https://pyup.io/repos/github/tadams42/marshmallow_configparser/python-3-shield.svg
-    :alt: Python 3
-    :target: https://pyup.io/repos/github/tadams42/marshmallow_configparser/
-
-.. |pyup_status| image:: https://pyup.io/repos/github/tadams42/marshmallow_configparser/shield.svg
-    :alt: Updates
-    :target: https://pyup.io/repos/github/tadams42/marshmallow_configparser/
 
 .. end-badges
 
