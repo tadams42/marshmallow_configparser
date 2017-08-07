@@ -7,7 +7,7 @@ Overview
 
 .. |version| image:: https://img.shields.io/pypi/v/marshmallow-configparser.svg
     :alt: PyPI Package latest release
-    :target: https://pypi.org/project/sokoenginepy/
+    :target: https://pypi.org/project/marshmallow-configparser/
 
 .. |license| image:: https://img.shields.io/pypi/l/marshmallow-configparser.svg
     :alt: License
@@ -15,11 +15,11 @@ Overview
 
 .. |wheel| image:: https://img.shields.io/pypi/wheel/marshmallow-configparser.svg
     :alt: PyPI Wheel
-    :target: https://pypi.org/project/sokoenginepy/
+    :target: https://pypi.org/project/marshmallow-configparser/
 
 .. |python_versions| image:: https://img.shields.io/pypi/pyversions/marshmallow-configparser.svg
     :alt: Supported versions
-    :target: https://pypi.org/project/sokoenginepy/
+    :target: https://pypi.org/project/marshmallow-configparser/
 
 .. |python_implementations| image:: https://img.shields.io/pypi/implementation/marshmallow-configparser.svg
     :alt: Supported implementations
