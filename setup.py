@@ -1,5 +1,11 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
+"""A setuptools based setup module.
+See:
+https://packaging.python.org/en/latest/distributing.html
+https://github.com/pypa/sampleproject
+"""
+
 from __future__ import absolute_import, print_function
 
 import io
@@ -65,31 +71,37 @@ setup(
     # $ pip install -e .[dev]
     extras_require={
         'dev': [
-            'pycodestyle >= 2.0.0',  # (formerly called pep8)
-            'mccabe >= 0.5.0',
-            'pylint >= 1.6.0',
-            'yapf >= 0.11.0',
-            'bumpversion >= 0.5.3',
+            'pycodestyle',
+            # 'mccabe',
+            # 'pylint',
+            'yapf',
+            'bumpversion',
             'isort',
+            'check-manifest',
 
             # IPython stuff
-            'ipython >= 5.0.0',
-            'jupyter >= 1.0.0',
-            'ipdb >= 0.10.0',
+            'ipython',
+            'jupyter',
+            'ipdb',
 
             # Docs and viewers
-            'sphinx >= 1.4.0',
-            'sphinx_rtd_theme >= 0.1.9',
+            'sphinx',
+            'sphinx_rtd_theme',
 
             # py.test stuff
-            'pytest-colordots >= 0.1.0',
-            'colored-traceback >= 0.2.0',
             'pytest >= 3.0.0',
-            'pytest-spec >= 1.0.0',
-            'pytest-cov >= 2.3.0',
-            'pytest-runner',  # Needed for `python setup.py test` to work
-            'check-manifest >= 0.33.0',
-            'coverage >= 4.2.0',
+            'pytest-pythonpath',
+            'colored-traceback',
+            # 'pytest-colordots',
+            'pytest-spec',
+            'pytest-sugar',
+            'pytest-cov',
+            'pytest-benchmark',
+            'pytest-mock',
+
+            'coverage',
+            'factory-boy',
+            'faker',
         ]
     }
 )

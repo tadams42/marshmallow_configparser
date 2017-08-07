@@ -9,7 +9,7 @@ Create new virtual environment
 .. code-block:: sh
 
     cd path/to/cloned/repo/marshmallow_configparser
-    pyvenv .venv
+    python3 -m venv .venv
     source .venv/bin/activate
     pip install -u pip wheel
 
@@ -26,7 +26,7 @@ Later, to uninstall it
 
     python setup.py develop --uninstall
 
-To install extra packages usefull in development
+To install extra packages useful in development
 
 .. code-block:: sh
 
@@ -37,19 +37,19 @@ Running tests
 
 .. code-block:: sh
 
-    python setup.py test -a "tests"
+    py.test
 
 or to get more verbose output
 
 .. code-block:: sh
 
-    python setup.py test -a "--spec tests"
+    py.test -p no:sugar --spec
 
 or to generate tests coverage
 
 .. code-block:: sh
 
-    py.test --cov=marshmallow_configparser --cov-report=html tests/
+    py.test --cov=marshmallow_configparser --cov-report=html
 
 and finally, tests can be run with tox_
 
@@ -74,16 +74,16 @@ Note, to combine the coverage data from all the tox environments run:
 
             PYTEST_ADDOPTS=--cov-append tox
 
-Runing under PyPy3
-------------------
+Running under PyPy3
+-------------------
 
 .. code-block:: sh
 
-    wget https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v5.5.0-alpha-linux64.tar.bz2
-    tar xvfj pypy3.3-v5.5.0-alpha-linux64.tar.bz2
-    virtualenv -p /foo/bar/baz/pypy3-v5.5.0-linux64/bin/pypy3pypy3 .venvpypy
-    source .venvpypy/bin/python
-
+    wget https://bitbucket.org/pypy/pypy/downloads/pypy3-v5.8.0-linux64.tar.bz2
+    tar -xvjf pypy3-v5.8.0-linux64.tar.bz2
+    virtualenv -p pypy3-v5.8.0-linux64/bin/pypy3 .venvpypy
+    source .venvpypy/bin/activate
+    pip install -U pip wheel
 
 Profiling
 ---------
@@ -124,12 +124,11 @@ Prepare ``~/.pypirc``
         pypitest
 
     [pypitest]
-    repository = https://testpypi.python.org/pypi
+    repository = https://test.pypi.org/legacy/
     username = <username>
     password = <password>
 
     [pypi]
-    repository = https://pypi.python.org/pypi
     username = <username>
     password = <password>
 

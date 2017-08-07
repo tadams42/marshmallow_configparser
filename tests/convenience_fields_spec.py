@@ -1,6 +1,3 @@
-import factories
-
-
 class DescribeConfigString(object):
     def it_uses_field_default_if_option_is_blank_in_file(
         self, config_string_config_schema, string_option_is_blank_file

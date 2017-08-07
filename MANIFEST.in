@@ -2,7 +2,6 @@ graft docs
 graft src
 graft tests
 
-include .bumpversion.cfg
 include .coveragerc
 include .editorconfig
 

@@ -1,4 +1,3 @@
-import factories
 import pytest
 from marshmallow.validate import ValidationError
 
