@@ -1,32 +1,42 @@
 language: python
 sudo: false
 cache: pip
+os: linux
+dist: trusty
 env:
   global:
     - LD_PRELOAD=/lib/x86_64-linux-gnu/libSegFault.so
     - SEGFAULT_SIGNALS=all
     - secure: V59XotjCl0kbDZaFbjPEyGyFUQIj+dFAhvLdzU3F9Hm/pB2qDRxqkrfyP/pjLNd6joTU//7cm20CWMZ0mjzJuxPq5NnM/WQSSDFlOrqYFS1NHC30A1VqBwiRX3SqEqKsT7QH0nqew0OO5dTkfABHyPu8JAEcq2nqbimoye7bJTO/5UyntLjjzirzeDp2SL5P359qD5D1zJ6rs7kos7PWNfufEK/J8IqZ5brF4P/0HovKRNDyxwfCkQ5QEgDwmiQ6WWI7N0tQrciEsav41PUCshNlTGZKTnLrVpB+eT80gkOD10yIfjqJs7fJFhE/P10MqU45/jcsHuu5U6xN/h53rx0u7I3ft8n16F6+sqL2r9ixKvuGfONpLBmEUKZXk1Rtv8Uj4T6uBnqdZTywvWNOgWYMGicpCT18bwNE8etihfkTG5q4HDRx9pYu9PMzHyA33gPQ9h3cERzw41lXI9cpDw7t+Ne1MUaJDWsMMpPFDv+B5LgNikSvmCak5joNScVCHL5fVwTIEU82Or6ouebnP3l7Xoh2Y37pqtYCdyqSv8DV4+ir8ebfSIpswM3ghZAQVkRXhWShnM108XQw68cAfhScpWTR3kuaA/Xapiga0/umFfgctiwCssxJwy+iW6sqqdRijGwv5vHFpVC4qMoPY8INclUeNa7vwAHGzV9F7AQ=
-  matrix:
-    - TOXENV=check
-    - TOXENV=docs
-    - TOXENV=codacy
 matrix:
   include:
     - python: '2.7'
       env:
-        - TOXENV=2.7-nocov
-    - python: '3.4'
-      env:
-        - TOXENV=3.4-nocov
+        - TOXENV=2.7
     - python: '3.5'
       env:
-        - TOXENV=3.5-nocov
+        - TOXENV=check
+    - python: '3.5'
+      env:
+        - TOXENV=docs
+    - python: '3.5'
+      env:
+        - TOXENV=codacy
+    - python: '3.4'
+      env:
+        - TOXENV=3.4
+    - python: '3.5'
+      env:
+        - TOXENV=3.5
     - python: '3.6'
       env:
-        - TOXENV=3.6-nocov
-    # - python: pypy3.5-5.8.0
-    #  env:
-    #    - TOXENV=pypy35-nocov
+        - TOXENV=3.6
+    - python: pypy-5.8.0
+      env:
+        - TOXENV=pypy
+    - python: pypy3.5-5.8.0
+      env:
+        - TOXENV=pypy3
 install:
   - pip install tox-travis
 script:
