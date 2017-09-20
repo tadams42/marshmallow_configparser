@@ -25,7 +25,7 @@ def read(*names, **kwargs):
 
 setup(
     name="marshmallow_configparser",
-    version='0.3.2',
+    version='0.3.3',
     license='MIT',
     description="ConfigParser meets marshmallow",
     long_description='%s\n%s' % (
@@ -72,8 +72,6 @@ setup(
     extras_require={
         'dev': [
             'pycodestyle',
-            # 'mccabe',
-            # 'pylint',
             'yapf',
             'bumpversion',
             'isort',
@@ -92,8 +90,6 @@ setup(
             'pytest >= 3.0.0',
             'pytest-pythonpath',
             'colored-traceback',
-            # 'pytest-colordots',
-            'pytest-spec',
             'pytest-sugar',
             'pytest-cov',
             'pytest-benchmark',
