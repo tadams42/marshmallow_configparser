@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.3.3 (2017-09-20)
+------------------
+* Added attribute to Schema that gives access to underlying config data
+
 
 0.3.2 (2017-08-07)
 ------------------
