@@ -4,7 +4,8 @@ import pytest
 from marshmallow.validate import Range
 
 from marshmallow_configparser import (ConfigInteger, ConfigParserSchema,
-                                      ConfigString, Integer, IsNotBlank, String)
+                                      ConfigString, Integer, IsNotBlank,
+                                      String)
 
 TESTS_ROOT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 

@@ -72,8 +72,6 @@ setup(
     extras_require={
         'dev': [
             'pycodestyle',
-            # 'mccabe',
-            # 'pylint',
             'yapf',
             'bumpversion',
             'isort',
@@ -92,8 +90,6 @@ setup(
             'pytest >= 3.0.0',
             'pytest-pythonpath',
             'colored-traceback',
-            # 'pytest-colordots',
-            'pytest-spec',
             'pytest-sugar',
             'pytest-cov',
             'pytest-benchmark',

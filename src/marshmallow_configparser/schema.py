@@ -1,3 +1,8 @@
+from copy import deepcopy
+
+from marshmallow import Schema, SchemaOpts, post_load
+from marshmallow.validate import ValidationError
+
 try:
     from configparser import ConfigParser
 except ImportError:
@@ -8,8 +13,6 @@ try:
 except ImportError:
     from io import StringIO
 
-from marshmallow import Schema, SchemaOpts, post_load
-from marshmallow.validate import ValidationError
 
 
 class ModelOpts(SchemaOpts):
@@ -93,12 +96,14 @@ class ConfigParserSchema(Schema):
         return self._load_from_config_parser(config_parser)
 
     def _load_from_config_parser(self, config_parser):
-        data = {}
+        self.config_parser_data = {}
 
         for section in config_parser.sections():
             for option in config_parser.options(section):
-                data[section + '.' + option] = (
+                self.config_parser_data[section + '.' + option] = (
                     config_parser.get(section, option)
                 )
 
-        return super(ConfigParserSchema, self).load(data)
+        return super(ConfigParserSchema, self).load(
+            deepcopy(self.config_parser_data)
+        )
