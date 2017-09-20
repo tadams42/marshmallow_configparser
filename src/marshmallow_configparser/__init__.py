@@ -6,4 +6,4 @@ from .fields import (UUID, Boolean, Date, DateTime, Decimal, Dict, Email,
 from .schema import ConfigParserSchema
 from .validators import IsNotBlank, IsNotNone
 
-__version__ = '0.3.2'
+__version__ = '0.3.3'
