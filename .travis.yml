@@ -22,9 +22,6 @@ matrix:
     - python: '3.5'
       env:
         - TOXENV=codacy
-    - python: '3.4'
-      env:
-        - TOXENV=3.4
     - python: '3.5'
       env:
         - TOXENV=3.5
@@ -40,7 +37,4 @@ matrix:
 install:
   - pip install tox-travis
 script:
-  - tox -v
-after_failure:
-  - more .tox/log/* | cat
-  - more .tox/*/log/* | cat
+  - tox

@@ -35,6 +35,8 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.napoleon',
     'sphinx.ext.autosummary',
+    'sphinx.ext.todo',
+    'm2r'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -42,9 +44,7 @@ templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
-#
-# source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
 
 # The encoding of source files.
 #
@@ -55,8 +55,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'marshmallow_configparser'
-copyright = ", ".join(str(y) for y in range(2017, datetime.now().year + 1)) + ', Tomislav Adamic'
 author = 'Tomislav Adamic'
+copyright = ", ".join(str(y) for y in range(2017, datetime.now().year + 1)) + ', ' + author
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

@@ -2,17 +2,16 @@ graft docs
 graft src
 graft tests
 
-include .coveragerc
 include .editorconfig
-include .style.yapf
 
-include CHANGELOG.rst
+include CHANGELOG.md
 include LICENSE
-include README.rst
+include README.md
 
-include tox.ini .travis.yml
+include tox.ini .travis.yml .readthedocs.yml
 
 global-exclude *.py[cod] __pycache__ *.so *.dylib
+global-exclude .pytest_cache .pytest_cache/*
 
 global-exclude .ipynb_checkpoints/*
 prune docs/_build
