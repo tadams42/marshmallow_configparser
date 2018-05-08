@@ -5,12 +5,13 @@ from .helpers import is_blank
 class ConfigString(String):
     """
     :class:`marshmallow.fields.Field` that ensures:
-        - option is always present in deserialized data
-        - deserialized value is either the one read from config file or one
-          declared in ``default``
 
-    This is pretty similar to :class:`.String`, except this one assumes defaults
-    for some of :class:`.String` attributes.
+    - option is always present in deserialized data
+    - deserialized value is either the one read from config file or one
+      declared in ``default``
+
+    This is pretty similar to :class:`.String`, except this one assumes
+    defaults for some of :class:`.String` attributes.
     """
 
     def __init__(
@@ -35,11 +36,12 @@ class ConfigString(String):
 class ConfigInteger(Integer):
     """
     :class:`marshmallow.fields.Field` that ensures:
-        - option is always present in deserialized data
-        - deserialized value is either the one read from config file or one
-          declared in ``default``
-        - allows None as deserialized value (:class:`.Integer` raises
-          ValidationError('Not a valid integer.'))
+
+    - option is always present in deserialized data
+    - deserialized value is either the one read from config file or one
+      declared in ``default``
+    - allows None as deserialized value (:class:`.Integer` raises
+      ValidationError('Not a valid integer.'))
 
     This is pretty similar to :class:`.Integer`, except this one assumes
     defaults for some of :class:`.Integer` attributes and changes treating of
@@ -68,7 +70,8 @@ class ConfigInteger(Integer):
 class ConfigBoolean(Boolean):
     """
     :class:`marshmallow.fields.Field` that ensures:
-        - option is always present in deserialized data
+
+    - option is always present in deserialized data
 
     This is pretty similar to :class:`.Boolean`, except this one assumes
     defaults for some of :class:`.Integer` attributes.

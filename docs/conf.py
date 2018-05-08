@@ -437,6 +437,5 @@ intersphinx_mapping = {
     'marshmallow': ('https://marshmallow.readthedocs.io/en/latest/', None)
 }
 
-
 #autodoc_member_order = 'bysource'
 autodoc_member_order = 'groupwise'
