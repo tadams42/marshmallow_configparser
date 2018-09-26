@@ -34,6 +34,15 @@ matrix:
     - python: pypy3.5-5.8.0
       env:
         - TOXENV=pypy3
+    - python: '3.5'
+      env:
+        - TOXENV=3.5_marshmallow3
+    - python: '3.6'
+      env:
+        - TOXENV=3.6_marshmallow3
+    - python: pypy3.5-5.8.0
+      env:
+        - TOXENV=pypy3_marshmallow3
 install:
   - pip install tox-travis
 script:

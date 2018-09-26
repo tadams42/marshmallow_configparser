@@ -1,28 +1,52 @@
 from marshmallow import fields
 
+from .compatibility import is_marshmallow3
+
 
 class ConfigParserFieldMixin(object):
-    @property
-    def load_from(self):
-        return self._load_from
+    if is_marshmallow3():
+        def __init__(self, *args, **kwargs):
+            self._data_key = None
+            super(ConfigParserFieldMixin, self).__init__(*args, **kwargs)
 
-    @load_from.setter
-    def load_from(self, value):
-        if value:
-            self._load_from = self._section + '.' + str(value)
-        else:
-            self._load_from = value
+        @property
+        def data_key(self):
+            return self._data_key
 
-    @property
-    def dump_to(self):
-        return self._dump_to
+        @data_key.setter
+        def data_key(self, value):
+            if value:
+                self._data_key = self._section + '.' + str(value)
+            else:
+                self._data_key = value
 
-    @dump_to.setter
-    def dump_to(self, value):
-        if value:
-            self._dump_to = self._section + '.' + str(value)
-        else:
-            self._dump_to = value
+    else:
+        def __init__(self, *args, **kwargs):
+            self._load_from = None
+            self._dump_to = None
+            super(ConfigParserFieldMixin, self).__init__(*args, **kwargs)
+
+        @property
+        def load_from(self):
+            return self._load_from
+
+        @load_from.setter
+        def load_from(self, value):
+            if value:
+                self._load_from = self._section + '.' + str(value)
+            else:
+                self._load_from = value
+
+        @property
+        def dump_to(self):
+            return self._dump_to
+
+        @dump_to.setter
+        def dump_to(self, value):
+            if value:
+                self._dump_to = self._section + '.' + str(value)
+            else:
+                self._dump_to = value
 
 
 class Dict(ConfigParserFieldMixin, fields.Dict):

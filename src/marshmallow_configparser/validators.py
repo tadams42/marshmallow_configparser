@@ -1,4 +1,5 @@
-from marshmallow.validate import ValidationError, Validator
+from marshmallow.exceptions import ValidationError
+from marshmallow.validate import Validator
 
 from .helpers import is_blank
 

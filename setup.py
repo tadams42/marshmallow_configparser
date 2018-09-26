@@ -86,11 +86,10 @@ setup(
             'bumpversion',
             'isort',
             'check-manifest',
+            'pylint',
 
             # IPython stuff
             'ipython',
-            'jupyter',
-            'ipdb',
 
             # Docs and viewers
             'sphinx',
@@ -99,7 +98,6 @@ setup(
 
             # py.test stuff
             'pytest >= 3.0.0',
-            'colored-traceback',
             'pytest-sugar',
             'pytest-cov',
             'pytest-mock',
