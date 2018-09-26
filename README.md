@@ -11,7 +11,7 @@
 [![docs](https://readthedocs.org/projects/marshmallow-configparser/badge/?style=flat)](http://marshmallow-configparser.readthedocs.io/en/latest/)
 [![requirements](https://requires.io/github/tadams42/marshmallow_configparser/requirements.svg?branch=master)](https://requires.io/github/tadams42/marshmallow_configparser/requirements/?branch=master)
 [![codacy_grade](https://api.codacy.com/project/badge/Grade/ad3aa55e2fc74a37a1b1ac2fb59f6dc0)](https://www.codacy.com/app/tadams42/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadams42/marshmallow_configparser&amp;utm_campaign=Badge_Grade)
-[![codacy_coverage](https://api.codacy.com/project/badge/Coverage/ad3aa55e2fc74a37a1b1ac2fb59f6dc0)](https://www.codacy.com/app/tadams42/marshmallow_configparser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tadams42/marshmallow_configparser&amp;utm_campaign=Badge_Coverage)
+[![codecov](https://codecov.io/gh/tadams42/marshmallow_configparser/branch/development/graph/badge.svg)](https://codecov.io/gh/tadams42/marshmallow_configparser)
 
 [//]: # (end-badges)
 
