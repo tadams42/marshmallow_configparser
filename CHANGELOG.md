@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0 (2018-09-26)
+
+* Added experimental, optional and transparently activated support for marshmallow 3.x.
+
 ## 0.3.3 (2017-09-20)
 
 * Added attribute to Schema that gives access to underlying config data
