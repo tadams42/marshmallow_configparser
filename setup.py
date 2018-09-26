@@ -25,13 +25,19 @@ def read(*names, **kwargs):
 
 setup(
     name="marshmallow_configparser",
-    version='0.3.3',
+    version='0.4.0',
     license='MIT',
     description="ConfigParser meets marshmallow",
     long_description='%s\n%s' % (
-        re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
-        re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
+        re.compile(
+            '^' + re.escape('[//]: # (start-badges)') + '.*^'
+            + re.escape('[//]: # (end-badges)'), re.M | re.S
+        ).sub('', read('README.md')),
+        # re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
+        ''
     ),
+    # In the future this will correctly render Markdown on PyPi:
+    # long_description_content_type='text/markdown',
     author="Tomislav Adamic",
     author_email="tomislav.adamic@gmail.com",
     url="https://github.com/tadams42/marshmallow_configparser",
@@ -47,7 +53,6 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: Implementation :: CPython',
@@ -56,7 +61,7 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     keywords=[
-        "congiparser", "marshmallow"
+        "congfiparser", "marshmallow"
     ],
     # List run-time dependencies HERE.  These will be installed by pip when
     # your project is installed. For an analysis of "install_requires" vs pip's
@@ -70,29 +75,31 @@ setup(
     # for example:
     # $ pip install -e .[dev]
     extras_require={
+        'docs': [
+            'sphinx >= 1.4',
+            'sphinx_rtd_theme',
+            'm2r >= 0.1.14',
+        ],
         'dev': [
             'pycodestyle',
             'yapf',
             'bumpversion',
             'isort',
             'check-manifest',
+            'pylint',
 
             # IPython stuff
             'ipython',
-            'jupyter',
-            'ipdb',
 
             # Docs and viewers
             'sphinx',
             'sphinx_rtd_theme',
+            'm2r',
 
             # py.test stuff
             'pytest >= 3.0.0',
-            'pytest-pythonpath',
-            'colored-traceback',
             'pytest-sugar',
             'pytest-cov',
-            'pytest-benchmark',
             'pytest-mock',
 
             'coverage',
